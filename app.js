@@ -1,1 +1,1 @@
-console.log("teste js")
+console.log(dados)
