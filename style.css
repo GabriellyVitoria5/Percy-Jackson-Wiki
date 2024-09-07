@@ -9,9 +9,10 @@ body {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
+    height: 100%; /* Garante que o body tenha a altura total da página */
     margin: 0;
     padding: 0;
+    
 }
 
 h1 {
@@ -21,34 +22,40 @@ h1 {
     letter-spacing: 0.4rem; 
 }
 
+h2 {
+    color: #222831; 
+    text-align: center; 
+    letter-spacing: 0.4rem; 
+}
+
 .main-nav {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #f0f0f0;
-padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 1rem;
 }
 
 .main-nav ul {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .main-nav li {
-margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .main-nav a {
-text-decoration: none;
-color: #333;
-padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
 }
 
 .main-nav a:hover {
-background-color: #ddd;
-border-bottom: 2px solid #333;
+    background-color: #ddd;
+    border-bottom: 2px solid #333;
 }
 
 section {
@@ -91,17 +98,20 @@ section button {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
+    background: #FFFFFF; 
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    width: 90%; /* Garante que a largura seja a mesma para todos */
+    min-height: 150px; /* Define uma altura mínima para uniformizar */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; 
     color: #222831; 
+    
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -127,7 +137,7 @@ footer {
     text-align: center; 
     padding: 0; 
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; 
 }
