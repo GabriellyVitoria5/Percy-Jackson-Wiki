@@ -11,10 +11,15 @@ function pesquisar() {
                     <a href="#" target="_blank">${dado.titulo}</a>
                 </h2>
                 <p class="descricao-meta">${dado.descricao}</p>
-                <p>${dado.dataLancamento}</p>
+                <p class="descricao-meta">Data de lançamento: ${formatarData(dado.dataLancamento)}</p>
             </div>
         `;
     }
 
     section.innerHTML = resultados;
+}
+
+function formatarData(data) {
+    const opcoes = { year: 'numeric', month: 'long', day: 'numeric' };
+    return data.toLocaleDateString('pt-BR', opcoes);
 }
