@@ -20,6 +20,6 @@ function pesquisar() {
 }
 
 function formatarData(data) {
-    const opcoes = { year: 'numeric', month: 'long', day: 'numeric' };
+    const opcoes = { ano: 'numeric', mes: 'long', dia: 'numeric' };
     return data.toLocaleDateString('pt-BR', opcoes);
 }
