@@ -1,10 +1,9 @@
-
 /* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
     font-family: "Chakra Petch", sans-serif; 
-    background-color: #DDDDDD; 
+    background-color: #77d4ff; /* Cor de fundo clara para contraste com os detalhes em azul e dourado */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -12,18 +11,18 @@ body {
     height: 100%; /* Garante que o body tenha a altura total da página */
     margin: 0;
     padding: 0;
-    
 }
 
 h1 {
     font-size: 2.5rem; 
-    color: #222831; 
+    color: #003366; /* Azul profundo */
     text-align: center; 
     letter-spacing: 0.4rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra leve */
 }
 
 h2 {
-    color: #222831; 
+    color: #003366; /* Azul profundo */
     text-align: center; 
     letter-spacing: 0.4rem; 
 }
@@ -32,7 +31,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: #003366; /* Azul profundo */
     padding: 1rem;
 }
 
@@ -49,13 +48,14 @@ h2 {
 
 .main-nav a {
     text-decoration: none;
-    color: #333;
+    color: #FFD700; /* Dourado */
     padding: 0.5rem 1rem;
+    font-weight: bold; /* Destaca o texto dos links */
 }
 
 .main-nav a:hover {
-    background-color: #ddd;
-    border-bottom: 2px solid #333;
+    background-color: #002244; /* Azul mais escuro ao passar o mouse */
+    border-bottom: 2px solid #FFD700; /* Borda dourada ao passar o mouse */
 }
 
 section {
@@ -67,12 +67,13 @@ section {
 
 section input {
     width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
+    border: 2px solid #003366; /* Borda com azul profundo */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
+    color: #003366; /* Azul profundo para o texto */
     font-size: 1rem; /* Tamanho da fonte */
+    background-color: #e0faff; /* Cor de fundo branca para os inputs */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
@@ -80,13 +81,13 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
+    background-color: #FFD700; /* Dourado */
+    color: #003366; /* Azul profundo para o texto do botão */
     font-size: 1rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve para o botão */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
@@ -94,65 +95,62 @@ section button {
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
+    background-color: #e0faff; /* Cor de fundo branca para melhor leitura */
+    border: 1px solid #003366; /* Borda com azul profundo */
 }
 
-/* Estiliza a imagem do livro */
 .imagem-livro {
     width: 120px; /* Largura da imagem */
     height: 180px; /* Altura da imagem */
     object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
     border-radius: 0.6rem; /* Borda arredondada da imagem */
     margin-right: 1rem; /* Espaçamento entre a imagem e o conteúdo */
+    border: 2px solid #003366; /* Borda com azul profundo para a imagem */
 }
 
-/* Estiliza a imagem do livro */
 .item-resultado {
     display: flex; /* Usa Flexbox para o layout horizontal */
     align-items: center; /* Alinha os itens verticalmente */
-    background: #FFFFFF; 
+    background-color: #e0faff;
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
     width: 90%; /* Garante que a largura seja a mesma para todos */
     min-height: 150px; /* Define uma altura mínima para uniformizar */
+    border: 1px solid #003366; /* Borda com azul profundo */
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; 
-    color: #222831; 
-    
+    color: #003366; /* Azul profundo */
 }
 
-/* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; 
+    color: #003366; /* Azul profundo */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: #FFD700; /* Dourado ao passar o mouse */
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #003366; /* Azul profundo */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
-/* Estiliza a data de lançamento */
 .data-lancamento-meta {
-    color: #45474B; /* Cor do texto */
+    color: #003366; /* Azul profundo */
     margin-top: 0.5rem; /* Margem acima da data para separação da descrição */
 }
 
 footer {
-    background-color: #F5F7F8; 
-    color: #45474B; 
+    background-color: #003366; /* Azul profundo */
+    color: #FFD700; /* Dourado para o texto */
     text-align: center; 
-    padding: 0; 
+    padding: 1rem; /* Adiciona um pouco de espaço interno */
     width: 100%; /* Largura total da página */
     position: relative; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
