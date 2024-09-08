@@ -22,14 +22,14 @@ function pesquisar() {
         dataLancamento = dado.dataLancamento.toString().toLowerCase()
 
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || dataLancamento.includes(campoPesquisa)) {
-            
             resultados += `
             <div class="item-resultado">
+                <img src="${dado.img}" alt="${dado.titulo}" class="imagem-livro">
                 <h2>
                     <a href="#" target="_blank">${dado.titulo}</a>
                 </h2>
                 <p class="descricao-meta">${dado.descricao}</p>
-                <p class="descricao-meta">${formatarData(dado.dataLancamento)}</p>
+                <p class="data-lancamento-meta">Data de lançamento: ${formatarData(dado.dataLancamento)}</p>
             </div>
         `;
         }

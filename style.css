@@ -96,8 +96,10 @@ section button {
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
-/* Estiliza cada item de resultado */
+/* Estiliza a imagem do livro */
 .item-resultado {
+    display: flex; /* Usa Flexbox para o layout horizontal */
+    align-items: center; /* Alinha os itens verticalmente */
     background: #FFFFFF; 
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
@@ -105,6 +107,15 @@ section button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
     width: 90%; /* Garante que a largura seja a mesma para todos */
     min-height: 150px; /* Define uma altura mínima para uniformizar */
+}
+
+/* Estiliza a imagem do livro */
+.imagem-livro {
+    width: 120px; /* Largura da imagem */
+    height: 180px; /* Altura da imagem */
+    object-fit: cover; /* Cobre o espaço sem distorcer a imagem */
+    border-radius: 0.6rem; /* Borda arredondada da imagem */
+    margin-right: 1rem; /* Espaçamento entre a imagem e o conteúdo */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -129,6 +140,12 @@ section button {
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+/* Estiliza a data de lançamento */
+.data-lancamento-meta {
+    color: #45474B; /* Cor do texto */
+    margin-top: 0.5rem; /* Margem acima da data para separação da descrição */
 }
 
 footer {
